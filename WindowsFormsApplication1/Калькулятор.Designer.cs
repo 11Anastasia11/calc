@@ -59,6 +59,7 @@
             this.buttonBack = new System.Windows.Forms.Button();
             this.Result = new System.Windows.Forms.Label();
             this.Memory = new System.Windows.Forms.Label();
+            this.Test = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -378,11 +379,22 @@
             this.Memory.Text = "            ";
             this.Memory.Click += new System.EventHandler(this.Memory_Click);
             // 
+            // Test
+            // 
+            this.Test.Location = new System.Drawing.Point(144, 83);
+            this.Test.Name = "Test";
+            this.Test.Size = new System.Drawing.Size(75, 23);
+            this.Test.TabIndex = 32;
+            this.Test.Text = "Test";
+            this.Test.UseVisualStyleBackColor = true;
+            this.Test.Click += new System.EventHandler(this.Test_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(267, 324);
+            this.Controls.Add(this.Test);
             this.Controls.Add(this.Memory);
             this.Controls.Add(this.Result);
             this.Controls.Add(this.buttonBack);
@@ -455,6 +467,7 @@
         private System.Windows.Forms.Button buttonBack;
         public System.Windows.Forms.Label Result;
         private System.Windows.Forms.Label Memory;
+        private System.Windows.Forms.Button Test;
     }
 }
 
